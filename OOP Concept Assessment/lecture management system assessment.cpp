@@ -7,22 +7,22 @@ class lecture{
 	    lecture(){}
 	    void get()
 	    {
-			cout<<"Enter Name of Lecturer: ";
-			cin.getline(name,100);
-			cout<<"Enter Name of Subject: ";
-			cin.getline(sub,100);
-			cout<<"Enter Name of Course: ";
-			cin.getline(course,100);
-			cout<<"Enter Number of Lectures: ";
-			cin.getline(num,100);
-			cout<<endl;
-		}
+		cout<<"Enter Name of Lecturer: ";
+		cin.getline(name,100);
+		cout<<"Enter Name of Subject: ";
+		cin.getline(sub,100);
+		cout<<"Enter Name of Course: ";
+		cin.getline(course,100);
+		cout<<"Enter Number of Lectures: ";
+		cin.getline(num,100);
+		cout<<endl;
+	     }
 		void display()
 		{
-			cout<<"Name of Lecturer: "<<name<<endl;
-			cout<<"Name of Subject: "<<sub<<endl;
-			cout<<"Name of Course: "<<course<<endl;
-			cout<<"Number of Lectures: "<<num<<endl;
+		   cout<<"Name of Lecturer: "<<name<<endl;
+		   cout<<"Name of Subject: "<<sub<<endl;
+		   cout<<"Name of Course: "<<course<<endl;
+		   cout<<"Number of Lectures: "<<num<<endl;
 		}	
 };
 int main()
@@ -32,14 +32,14 @@ int main()
 		cout<<"**********"<<endl;
 		for(int i=0;i<5;i++)
 		{
-			cout<<"Lecture "<<i+1<<":\n";
-			obj[i].get();
+		   cout<<"Lecture "<<i+1<<":\n";
+		   obj[i].get();
 		}
 	cout<<"\nDisplaying Details of Five lectures:\n";
 	for(int i=0;i<5;i++)
 	{
-		cout<<"\nLecture "<<i+1<<":\n";
-		obj[i].display();
+	   cout<<"\nLecture "<<i+1<<":\n";
+           obj[i].display();
 	}
 	return 0;
 }
