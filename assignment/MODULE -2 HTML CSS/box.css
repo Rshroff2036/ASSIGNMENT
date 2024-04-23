@@ -1,0 +1,14 @@
+/* box.css */
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: red; /* Change background color on hover */
+}

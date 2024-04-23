@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Company Dropdown List</title>
+</head>
+<body>
+    <h1>Select an IT Company</h1>
+    <select id="itCompanySelect">
+        <option value="apple">Apple</option>
+        <option value="microsoft">Microsoft</option>
+        <option value="google">Google</option>
+        <option value="amazon">Amazon</option>
+        <option value="facebook">Facebook</option>
+    </select>
+
+    <button onclick="getSelectedCompany()">Get Selected Company</button>
+
+    <p id="selectedCompany"></p>
+
+    <script>
+        function getSelectedCompany() {
+            var selectElement = document.getElementById("itCompanySelect");
+            var selectedValue = selectElement.value;
+            var selectedText = selectElement.options[selectElement.selectedIndex].text;
+            document.getElementById("selectedCompany").textContent = "You selected: " + selectedText + " (" + selectedValue + ")";
+        }
+    </script>
+</body>
+</html>

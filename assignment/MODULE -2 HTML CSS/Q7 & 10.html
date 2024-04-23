@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            background-color: rgb(96,185,249);
+            font-family: sans-serif;
+            font-size: 18px;
+            text-align: center;
+            width: 684px;
+            color: rgb red;
+        }
+        h5{
+            font-weight: bolder;
+            color: red;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        span{
+            color: red;
+        }
+        form{
+            background-color: rgb(167,241,241);
+            font-family: sans-serif;
+            font-size: small;
+            font-weight: bolder;
+            width: 684px;
+        }
+        label{
+            display: inline-block;
+            width: 140px;
+            text-align: right;
+        }
+        input,select{
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        .first,.seventh{
+            width: 650px;
+            text-align: center;
+        }
+        .second,.third,.fourth,.fifth{
+            width: 340px ;
+            display: inline-block;
+            text-align: left;
+        }
+        .sixth{
+            width: 650px;
+            text-align: left;
+        }
+        button{
+            color: white;
+            font-weight: bolder;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body style="height: 4000px;">
+    <h2>Individual Regitration</h2>
+    <form action="">
+        <h5>User Particulars</h5>
+        <div class="first">
+            <label> <span>*</span>Login ID</label>
+            <input type="text" required><br>
+            <label> <span>*</span>Password</label>
+            <input type="password" id="" name="pass" required><br>
+            <label> <span>*</span>Confirm Password</label>
+            <input type="password" id="" name="pass" required>
+        
+        </div>
+        <h5>Personal Particulars</h5>
+        <div class="second">
+            <label> <span>*</span>Salutation</label>
+            <select class="salu" name="" id="" required>
+                <option value="" hidden>select</option>
+                <option value="" >Mr.</option>
+                <option value="" >Miss.</option>
+                <option value="" >Mrs.</option>
+            </select><br>
+            <label> <span>*</span>Middle Name</label>
+            <input type="text" required><br>
+
+            <label> <span>*</span>Resident Status</label>
+            <select  class="res" name="" id="" required>
+                <option value="" hidden>select</option>
+                <option value="" >Indian</option>
+                <option value="" >NRI</option>
+            </select><br>
+            <label> <span>*</span>Email-ID</label>
+            <input type="email" required>
+        </div>
+        <div class="third">
+            <label> <span>*</span>First Name</label>
+            <input type="text" required><br>
+            <label> <span>*</span>Last Name</label>
+            <input type="text" required><br>
+            <label> <span>*</span>Country</label>
+            <select class="Country" name="" id="" required>
+                <option value="" hidden>select</option>
+                <option value="" >India</option>
+                <option value="" >USA</option>
+                <option value="" >Canada</option>
+            </select><br>
+            <label> <span>*</span>Mobile Number</label>
+            <input type="tel"required pattern="[0-9]{10}">
+            
+        </div>
+        <h5>Account Particulars</h5>
+        <div class="fourth">
+            <label> <span>*</span>15 Digit Account No</label>
+            <input type="text"required pattern="[0-9]{15}"> <br>
+
+            <label> <span>*</span>Fund Transfer</label>
+            <select name="" id="" required>
+                <option value="" hidden>select</option>
+                <option value="" >UPI/option>
+                <option value="" >Debit</option>
+                <option value="" >Net Banking</option>
+            </select>
+        </div>
+        <div class="fifth">
+            <label> <span>*</span>Nick Name</label>
+            <input type="text" required>
+        </div>
+        <h5>DECLARATION</h5>
+        <div class="sixth">
+            <p>I have read,understood and hereby agree to the terma and condtition in respect of all products and channels.</p>
+            <p>I understand that any changes in the terms and conditions application to this relationship would be made avaliable to me on request at any IOB branches.I confirm that all accounts under this login name are operated singlyand in case of joint account operated by either or survisor/anyone under his/her joint name respectively. I do herely decalre that information furnished in this form is true to the best of my knowledge and belief. </p>
+
+        </div>
+        <div class="seventh">
+            <button>
+                submit
+            </button>
+            <button>
+                Reset
+            </button>
+        </div>
+        </form>
+</body>
+</html>
